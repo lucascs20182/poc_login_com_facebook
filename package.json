@@ -1,0 +1,21 @@
+{
+  "name": "login_com_facebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.1"
+  }
+}
