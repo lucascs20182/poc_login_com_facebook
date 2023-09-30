@@ -1,0 +1,24 @@
+name: Production CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+
+jobs:
+
+  # test:
+
+  deploy:
+    name: Deploy
+    # needs: [test]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.RENDER_TOKEN }}
+          api-key: ${{ secrets.SERVICE_ID }}
