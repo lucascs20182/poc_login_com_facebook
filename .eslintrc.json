@@ -5,8 +5,15 @@
       "extends": "standard-with-typescript",
       "parserOptions": {
         "project": "./tsconfig.json"
+      },
+      "rules": {
+        "semi": ["error", "always"],
+        "@typescript-eslint/semi": "off",
+        "@typescript-eslint/member-delimiter-style": "off",
+        "@typescript-eslint/consistent-type-definitions": "off",
+        "@typescript-eslint/no-namespace": "off"
+        // "max-len": ["error", { "code": 80 }]
       }
     }
-  ],
-  "ignorePatterns": ["jest.config.js"]
+  ]
 }
