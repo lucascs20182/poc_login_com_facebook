@@ -1,5 +1,4 @@
 {
-  "extends": "standard-with-typescript",
   "overrides": [
     {
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
@@ -8,5 +7,6 @@
         "project": "./tsconfig.json"
       }
     }
-  ]
+  ],
+  "ignorePatterns": ["jest.config.js"]
 }
