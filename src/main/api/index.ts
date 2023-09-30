@@ -24,7 +24,7 @@ app.get('/', (req, response) => {
   client.query(`SELECT * FROM example;`, (err, res) => {
     if (!err) {
       console.log(res.rows);
-      response.send(`testando query: ${res.rows[1].texto}`);
+      response.send(`testando query: ${res.rows[1].texto.toLowerCase()}`);
     } else {
       console.log(err.message);
       response.send(`algum erro aconteceu:\n${err.message}`);
